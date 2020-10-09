@@ -1,3 +1,7 @@
+body {
+    background-color:#dedfe4;
+}
+
 #app {
     display: flex;
     justify-content: center;
@@ -5,6 +9,10 @@
 
 .calc {
     width: 150px;
+    background-color: #fffaf6;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 14px 37px -10px rgba(34, 60, 80, 0.2);
 }
 
 .calc input {
@@ -15,37 +23,46 @@
 .buttons {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -5px;
 }
 
 .numbers {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
-    background-color: red;
+    width: 40px;
+    height: 40px;
+    background-color: #fffaf6;
+    border-radius: 50%;
+    margin: 5px;
 }
 
 .signs {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
-    background-color: yellow;
+    width: 40px;
+    height: 40px;
+    background-color:  #fffaf6;
+    border-radius: 50%;
+    margin: 5px;
 }
 
 .numbers:hover,
 .signs:hover,
 .reset:hover {
-    transition: all 1s ease-out;
-    opacity: 50%;
+    transition: all 0.5s ease-out;
+    background-color: #dedfe4;
 }
 
 .reset {
     background-color: green;
-    width: 100px;
+    width: 95px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
+    margin: 5px 5px 0 0;
 }

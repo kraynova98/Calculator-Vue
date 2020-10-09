@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
     <title>Calculator</title>
 </head>
 <body>
     <div id="app">
-        <input type="text">
+        <div class="calc">
+            <div class="result">
+                <input type="text" v-model="result">
+            </div>
+            <div class="buttons">
+                <div class="numbers" v-on:click="setNumber(number)" v-for="number in numbers">{{ number }}</div>
+            </div>
+        </div>
     </div>
     <script src="main.js"></script>
 </body>

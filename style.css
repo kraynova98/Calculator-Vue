@@ -26,7 +26,17 @@
     background-color: red;
 }
 
-.numbers:hover {
+.signs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+}
+
+.numbers:hover,
+.signs:hover {
     transition: all 1s ease-out;
     opacity: 50%;
 }

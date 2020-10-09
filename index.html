@@ -16,6 +16,7 @@
             <div class="buttons">
                 <div class="numbers" v-on:click="setNumber(number)" v-for="number in numbers">{{ number }}</div>
                 <div class="signs" v-on:click="getResult(sign)" v-for="sign in signs">{{ sign }}</div>
+                <div class="reset" v-on:click="reset()">C</div>
             </div>
         </div>
     </div>

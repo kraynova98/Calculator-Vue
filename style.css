@@ -36,11 +36,16 @@
 }
 
 .numbers:hover,
-.signs:hover {
+.signs:hover,
+.reset:hover {
     transition: all 1s ease-out;
     opacity: 50%;
 }
 
-.result {
-    
+.reset {
+    background-color: green;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

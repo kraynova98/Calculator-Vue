@@ -1,5 +1,6 @@
 body {
     background-color:#dedfe4;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #app {
@@ -8,9 +9,12 @@ body {
 }
 
 .calc {
-    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
     background-color: #fffaf6;
-    padding: 10px;
+    padding-bottom: 10px;
     border-radius: 20px;
     box-shadow: 0px 14px 37px -10px rgba(34, 60, 80, 0.2);
 }
@@ -18,9 +22,13 @@ body {
 .calc input {
     width: 100%;
     box-sizing: border-box;
+    height: 100px;
+    border-radius: 20px 20px 0 0;
+    border: none;
 }
 
 .buttons {
+    width: 150px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -36,9 +44,11 @@ body {
     background-color: #fffaf6;
     border-radius: 50%;
     margin: 5px;
+    cursor: pointer;
 }
 
-.signs {
+.signs,
+.reset {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +57,8 @@ body {
     background-color:  #fffaf6;
     border-radius: 50%;
     margin: 5px;
+    color: #b2b2b0;
+    cursor: pointer;
 }
 
 .numbers:hover,
@@ -56,8 +68,8 @@ body {
     background-color: #dedfe4;
 }
 
-.reset {
-    background-color: green;
+.calculate {
+    background-color: #d83f2d;
     width: 95px;
     height: 40px;
     display: flex;
@@ -65,4 +77,5 @@ body {
     align-items: center;
     border-radius: 20px;
     margin: 5px 5px 0 0;
+    cursor: pointer;
 }

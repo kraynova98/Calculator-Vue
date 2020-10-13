@@ -2,7 +2,7 @@ var app = new Vue({
     el: '#app',
     data: {
       numbers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 0],
-      signs: ['+', '-', '/', '*', '.', '='],
+      signs: ['+', '-', '/', '*', '.'],
       result: ''
     },
     methods: {
@@ -10,7 +10,7 @@ var app = new Vue({
         this.result += String(number); 
       },
       getResult: function(sign) {
-        sign == "=" ? this.result = eval(this.result) : this.setNumber(sign);
+        this.result = eval(this.result);
       },
       reset: function() {
         this.result = '';

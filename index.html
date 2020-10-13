@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <title>Calculator</title>
 </head>
 <body>
@@ -17,6 +18,7 @@
                 <div class="numbers" v-on:click="setNumber(number)" v-for="number in numbers">{{ number }}</div>
                 <div class="signs" v-on:click="getResult(sign)" v-for="sign in signs">{{ sign }}</div>
                 <div class="reset" v-on:click="reset()">C</div>
+                <div class="calculate" v-on:click="getResult()">=</div>
             </div>
         </div>
     </div>

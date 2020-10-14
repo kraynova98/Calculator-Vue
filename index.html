@@ -12,7 +12,7 @@
     <div id="app">
         <div class="calc">
             <div class="result">
-                <input type="text" v-model="result">
+                <input v-on:keyup.enter="getResult()" type="text" v-model="result">
             </div>
             <div class="buttons">
                 <div class="numbers" v-on:click="setNumber(sign)" v-for="sign in numbers">{{ sign }}</div>

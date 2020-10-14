@@ -6,10 +6,10 @@ var app = new Vue({
       result: ''
     },
     methods: {
-      setNumber: function(number) {
-        this.result += String(number); 
+      setNumber: function(sign) {
+        this.result += String(sign); 
       },
-      getResult: function(sign) {
+      getResult: function() {
         this.result = eval(this.result);
       },
       reset: function() {
